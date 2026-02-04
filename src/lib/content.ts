@@ -60,4 +60,31 @@ export const site = {
     { name: "BLUETTI", note: "Energy-focused campus initiative and technical partnership." },
     { name: "AFKAR Printing & Publishing", note: "Workplace training, internship, and research collaboration." },
   ];
+
+  export const news = [
+    {
+      title: "Empowering the Next Generation: TETCoE Support for Students, Staff and Researchers",
+      date: "30 May, 2025",
+      summary:
+        "TETCoE continues to strengthen capacity building through targeted support for students, academic staff, and researchers.",
+      slug: "empowering-the-next-generation-2025",
+      // TODO: Add cover image
+      // TODO: Add full article content or PDF link
+    },
+    {
+      title: "Furniture Installation Training Programme Successfully Concludes",
+      date: "19 July, 2025",
+      summary:
+        "The Furniture Installation Training programme funded by TETFund and executed by Jaebee Furniture Training Academy concluded successfully.",
+      slug: "furniture-installation-training-2025",
+    },
+    {
+      title: "BLUETTI Campus Initiative Lights Up YabaTech",
+      date: "20 May, 2023",
+      summary:
+        "The BLUETTI Campus Initiative (LAAF) empowered students with hands-on exposure to solar energy technology.",
+      slug: "bluettti-campus-initiative-2023",
+    },
+  ];
+  
   

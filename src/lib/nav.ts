@@ -3,6 +3,7 @@ export const navLinks = [
     { href: "/focus-areas", label: "Focus Areas" },
     { href: "/programmes", label: "Programmes" },
     { href: "/activities", label: "Activities" },
+    { href: "/news", label: "News" }, 
     { href: "/governance", label: "Governance" },
     { href: "/partners", label: "Partners" },
     { href: "/contact", label: "Contact" },

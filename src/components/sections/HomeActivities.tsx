@@ -17,10 +17,16 @@ export default function HomeActivities() {
           {activities.slice(0, 4).map((a) => (
             <Card key={a.title} className="p-6">
               <div className="flex items-center justify-between gap-3">
-                <p className="text-base font-semibold text-neutral-900">{a.title}</p>
-                <span className="text-xs font-semibold text-neutral-500">{a.year}</span>
+                <p className="text-base font-semibold text-neutral-900">
+                  {a.title}
+                </p>
+                <span className="text-xs font-semibold text-neutral-500">
+                  {a.year}
+                </span>
               </div>
-              <p className="mt-2 text-sm text-neutral-600 leading-relaxed">{a.desc}</p>
+              <p className="mt-2 text-sm text-neutral-600 leading-relaxed">
+                {a.desc}
+              </p>
 
               {/* TODO: Add images carousel or YouTube embed per activity */}
               <div className="mt-4 rounded-xl bg-neutral-100 p-4 text-sm text-neutral-500">
@@ -38,6 +44,8 @@ export default function HomeActivities() {
             View all activities →
           </a>
         </div>
+
+        {/* TODO: Add "Latest News" preview (top 2 posts) */}
       </Container>
     </section>
   );
