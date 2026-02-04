@@ -2,28 +2,30 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Container from "./Container";
 import { navLinks } from "@/lib/nav";
+import logo from "../../assets/img/logo.png";
 
 export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white/80 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-neutral-200 bg-white backdrop-blur">
       <Container>
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             {/* TODO: Replace with official logo image */}
-            <div className="h-10 w-10 rounded-xl bg-neutral-900 text-white grid place-items-center text-sm font-semibold">
-              T
-            </div>
-            <div className="leading-tight">
+            {/* <div className="h-10 w-10 rounded-xl bg-neutral-900 text-white grid place-items-center text-sm font-semibold"> */}
+              <Image src={logo} alt={"TETCoE"} className="h-16 w-full"/>
+            {/* </div> */}
+            {/* <div className="leading-tight">
               <p className="text-sm font-semibold text-neutral-900">TETCoE</p>
               <p className="text-xs text-neutral-500">YabaTech • Lagos</p>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop nav */}

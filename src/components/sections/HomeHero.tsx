@@ -4,7 +4,7 @@ import { site } from "@/lib/content";
 export default function HomeHero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-neutral-100 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-green-400/80 to-yellow-200" />
       <Container>
         <div className="relative py-14 sm:py-20 grid gap-10 lg:grid-cols-2 lg:items-center">
           <div>

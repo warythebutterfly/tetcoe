@@ -8,7 +8,7 @@ export default function SectionHeading({
     desc?: string;
   }) {
     return (
-      <div className="max-w-2xl">
+      <div className="max-w-2xl bg-primary">
         {eyebrow ? (
           <p className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
             {eyebrow}
