@@ -17,15 +17,13 @@ export default function Navbar() {
       <Container>
         <nav className="flex items-center justify-between py-4">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            {/* TODO: Replace with official logo image */}
-            {/* <div className="h-10 w-10 rounded-xl bg-neutral-900 text-white grid place-items-center text-sm font-semibold"> */}
-              <Image src={logo} alt={"TETCoE"} className="h-16 w-full"/>
-            {/* </div> */}
-            {/* <div className="leading-tight">
-              <p className="text-sm font-semibold text-neutral-900">TETCoE</p>
-              <p className="text-xs text-neutral-500">YabaTech • Lagos</p>
-            </div> */}
+          <Link href="/" className="flex items-center gap-3 shrink-0">
+            <Image
+              src={logo}
+              alt="TETCoE"
+              priority
+              className="h-16 w-auto sm:h-12 lg:h-14"
+            />
           </Link>
 
           {/* Desktop nav */}
