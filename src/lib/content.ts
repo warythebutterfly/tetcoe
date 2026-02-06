@@ -9,6 +9,15 @@ export const site = {
     "To be the leading Centre of Excellence in providing world-class solutions to skills and industrial needs for sustainable development and economic growth.",
   mission:
     "To produce skills, innovative applied research and develop human resources responsive to community and industry needs.",
+  directorMessage: `The TETFund Centre of Excellence in Skills, Entrepreneurship and Sustainable Development (TETCoE) was established to strengthen the capacity of Yaba College of Technology in delivering high-quality, industry-relevant training, applied research, and entrepreneurial development aligned with national and global priorities.
+
+/n Since its inception, the Centre has focused on addressing critical skills gaps through demand-driven programmes, strategic partnerships, and practical training initiatives that enhance employability, innovation, and sustainable development. Our activities span skills acquisition, research support, entrepreneurship development, and industry collaboration, all designed to respond directly to labour market needs and societal challenges.
+
+/n Through collaborations with industry partners, development organisations, and academic institutions, TETCoE continues to create opportunities for students, staff, and researchers to acquire relevant competencies, access funding opportunities, and translate knowledge into impactful solutions. We remain committed to transparency, accountability, and results-based delivery in line with TETFund’s objectives and performance framework.
+
+/n As we continue this journey, the Centre will deepen its focus on quality, relevance, and sustainability, ensuring that our programmes contribute meaningfully to national development, institutional strengthening, and the advancement of technical and vocational education in Nigeria.`,
+  directorName: "Arc. Sheriffdeen Ayodele-Oja",
+  directorTitle: "directorTitle",
 };
 
 export const focusAreas = [
@@ -83,7 +92,7 @@ export const activities = [
       "/img/activities/bluetti-6.png",
       "/img/activities/bluetti-7.png",
     ],
-    youtube: null //"https://www.youtube.com/embed/XXXXXXX", //TODO: replace if available
+    youtube: null, //"https://www.youtube.com/embed/XXXXXXX", //TODO: replace if available
   },
   // {
   //   title: "Furniture Installation Training",
