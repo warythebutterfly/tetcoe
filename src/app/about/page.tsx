@@ -17,7 +17,7 @@ export default function AboutPage() {
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           {/* Main content */}
           <Card className="p-6 lg:col-span-2">
-            <p className="text-sm text-neutral-600 leading-relaxed max-w-prose">
+            <p className="text-sm text-neutral-600 leading-relaxed px-2">
               <span className="font-semibold text-[#012147]">
                 {site.fullName}
               </span>{" "}
@@ -28,7 +28,7 @@ export default function AboutPage() {
             </p>
 
             {/* Director's Message */}
-            <div className="mt-8 border-t border-neutral-200 pt-6">
+            <div className="mt-8 border-t border-neutral-200 pt-6 px-4">
               <p className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
                 Message from the Centre Director
               </p>
@@ -46,7 +46,7 @@ export default function AboutPage() {
                 {/* Message */}
                 <div>
                   {site.directorMessage.split("/n").map((paragraph) => (
-                    <p className="text-sm text-neutral-700 leading-relaxed max-w-prose text-justify mb-4">
+                    <p className="text-sm text-neutral-700 leading-relaxed text-justify mb-4">
                       {paragraph}
                     </p>
                   ))}
