@@ -15,7 +15,7 @@ export default function GovernancePage() {
 
         {/* Leadership overview */}
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
-          <Card className="p-6">
+          {/* <Card className="p-6">
             <h3 className="font-semibold text-neutral-900">
               Result-Based Financing (RBF)
             </h3>
@@ -32,7 +32,7 @@ export default function GovernancePage() {
               <li>• DLI 5: Financial Management</li>
               <li>• DLI 6: Procurement Management</li>
             </ul>
-          </Card>
+          </Card> */}
 
           <Card className="p-6">
             <h3 className="font-semibold text-neutral-900">Centre Director</h3>
@@ -92,7 +92,7 @@ export default function GovernancePage() {
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {governance.tacMembers.map((m) => (
               <Card key={m.name} className="p-5">
-                <BoardMemberCard member={m} variant="grid" />
+                <BoardMemberCard member={m}  />
               </Card>
             ))}
           </div>

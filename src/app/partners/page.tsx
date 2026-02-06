@@ -20,14 +20,20 @@ export default function PartnersPage() {
               className="flex flex-col items-center text-center"
             >
               {/* Logo container */}
-              <div className="flex h-24 w-full items-center justify-center rounded-2xl border border-neutral-200 bg-white px-6">
-                <Image
-                  src={partner.photo}
-                  alt={partner.name}
-                  width={160}
-                  height={80}
-                  className="max-h-12 w-auto object-contain"
-                />
+              <div className="flex h-24 w-full items-center justify-center rounded-2xl border border-neutral-200 bg-white px-6 transition-all duration-300
+             hover:-translate-y-1 hover:border-green-400/80 hover:shadow-md">
+              <div
+              key={partner.name}
+              className="group flex items-center justify-center rounded-xl bg-white px-6 py-4"
+            >
+              <Image
+                src={partner.photo}
+                alt={partner.name}
+                width={160}
+                height={80}
+                className="max-h-12 w-auto object-contain"
+              />
+            </div>
               </div>
 
               {/* Text */}

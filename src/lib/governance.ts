@@ -76,7 +76,7 @@ export const governance = {
     {
       name: "Dr. Engr. Olalekan Luqman Toriola-Coker",
       title:
-        "MEng, Ph.D., CEng, MNSE RG(COREN) MAPM, Director Centre for Linkage, collaborative research",
+        "TETCoE TAC Member, MEng, Ph.D., CEng, MNSE RG(COREN) MAPM, Director Centre for Linkage, collaborative research",
       photo: "/img/members/OLALEKAN.png",
       bio: "Dr. Toriola-Coker is a chartered engineer and researcher specializing in construction management, infrastructure, and public-private partnerships. He provides advisory support in cross-disciplinary research, innovation-to-market initiatives, and industry-academic collaboration.",
     },

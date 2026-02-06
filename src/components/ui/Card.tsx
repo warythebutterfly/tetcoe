@@ -81,7 +81,7 @@ export default function BoardMemberCard({
         alt={member.name}
         width={size}
         height={size}
-        className="rounded-xl object-cover shrink-0"
+        className="rounded-xl object-cover shrink-0 max-h-[75px] max-w-[70px]"
       />
 
       <div className="min-w-0">

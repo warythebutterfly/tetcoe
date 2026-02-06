@@ -19,14 +19,14 @@ export default function HomePartners() {
               key={partner.name}
               className="group flex items-center justify-center rounded-xl border border-neutral-200 bg-white px-6 py-4
              transition-all duration-300
-             hover:-translate-y-1 hover:border-green hover:shadow-md"
+             hover:-translate-y-1 hover:border-green-400/80 hover:shadow-md"
             >
               <Image
                 src={partner.photo}
                 alt={partner.name}
                 width={160}
                 height={80}
-                className="max-h-10 w-auto object-contain"
+                className="max-h-12 w-auto object-contain"
               />
             </div>
           ))}
