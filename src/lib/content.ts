@@ -161,3 +161,30 @@ export const news = [
     slug: "bluettti-campus-initiative-2023",
   },
 ];
+
+export const courses = [
+  {
+    title: "Wood Machinist Course",
+    category: "Technical Skills",
+    summary:
+      "Hands-on training in wood machining operations, equipment handling, safety practices, and production techniques for furniture and construction applications.",
+  },
+  {
+    title: "Furniture Installation Course",
+    category: "Technical Skills",
+    summary:
+      "Practical training focused on furniture measurement, installation, finishing, and on-site fitting techniques aligned with industry standards.",
+  },
+  {
+    title: "Auto-Diagnostic Course",
+    category: "Technical Skills",
+    summary:
+      "Training in modern vehicle diagnostic systems, fault detection, electronic control units (ECUs), and automotive maintenance technologies.",
+  },
+  {
+    title: "Architectural Physical Model Making",
+    category: "Built Environment",
+    summary:
+      "Skill-based course covering architectural model fabrication, material selection, scale interpretation, and presentation techniques.",
+  },
+];
