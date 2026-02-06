@@ -14,7 +14,7 @@ export default function SectionHeading({
             {eyebrow}
           </p>
         ) : null}
-        <h2 className="mt-2 text-2xl sm:text-3xl font-semibold tracking-tight text-neutral-900">
+        <h2 className="mt-2 text-2xl sm:text-3xl font-semibold tracking-tight text-[#012147]">
           {title}
         </h2>
         {desc ? (

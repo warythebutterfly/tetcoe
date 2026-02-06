@@ -121,7 +121,7 @@ export default function ActivityCarousel({
               onClick={() => emblaApi?.scrollTo(i)}
               className={`h-1.5 w-1.5 rounded-full transition ${
                 i === selectedIndex
-                  ? "bg-neutral-900"
+                  ? "bg-[#012147]"
                   : "bg-neutral-300"
               }`}
               aria-label={`Go to image ${i + 1}`}

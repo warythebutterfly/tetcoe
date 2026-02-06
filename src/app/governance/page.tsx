@@ -16,7 +16,7 @@ export default function GovernancePage() {
         {/* Leadership overview */}
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {/* <Card className="p-6">
-            <h3 className="font-semibold text-neutral-900">
+            <h3 className="font-semibold text-[#012147]">
               Result-Based Financing (RBF)
             </h3>
             <p className="mt-3 text-sm text-neutral-600 leading-relaxed">
@@ -35,7 +35,7 @@ export default function GovernancePage() {
           </Card> */}
 
           <Card className="p-6">
-            <h3 className="font-semibold text-neutral-900">Centre Director</h3>
+            <h3 className="font-semibold text-[#012147]">Centre Director</h3>
 
             <div className="mt-4">
               <BoardMemberCard member={governance.director} variant="lead" />
@@ -46,13 +46,13 @@ export default function GovernancePage() {
         {/* Management & Admin */}
         <div className="mt-16 border-t border-neutral-200 pt-10">
 
-          <h3 className="text-lg font-semibold text-neutral-900">
+          <h3 className="text-lg font-semibold text-[#012147]">
             Centre Management & Administration
           </h3>
 
           <div className="mt-6 grid gap-6 md:grid-cols-2">
             <Card className="p-6">
-              <h4 className="font-semibold text-neutral-900 mb-4">
+              <h4 className="font-semibold text-[#012147] mb-4">
                 Centre Managers
               </h4>
 
@@ -64,7 +64,7 @@ export default function GovernancePage() {
             </Card>
 
             <Card className="p-6">
-              <h4 className="font-semibold text-neutral-900 mb-4">
+              <h4 className="font-semibold text-[#012147] mb-4">
                 Administrative Officers
               </h4>
 
@@ -80,7 +80,7 @@ export default function GovernancePage() {
         {/* TAC Members */}
         <div className="mt-16 border-t border-neutral-200 pt-10">
 
-          <h3 className="text-lg font-semibold text-neutral-900">
+          <h3 className="text-lg font-semibold text-[#012147]">
             Technical Advisory Committee (TAC)
           </h3>
 

@@ -5,7 +5,7 @@ export default function HomeCTA() {
   return (
     <section className="py-12 sm:py-16">
       <Container>
-        <div className="rounded-3xl border border-neutral-200 bg-neutral-900 text-white p-8 sm:p-10">
+        <div className="rounded-3xl border border-neutral-200 bg-[#012147] text-white p-8 sm:p-10">
           <h3 className="text-2xl font-semibold tracking-tight">
             Partner with {site.name} or enquire about programmes
           </h3>
@@ -17,7 +17,7 @@ export default function HomeCTA() {
           <div className="mt-6 flex flex-wrap gap-3">
             <a
               href="/contact"
-              className="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-neutral-900 hover:bg-neutral-100 transition"
+              className="inline-flex items-center rounded-xl bg-white px-5 py-3 text-sm font-semibold text-[#012147] hover:bg-neutral-100 transition"
             >
               Contact Us
             </a>

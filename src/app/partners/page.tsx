@@ -37,7 +37,7 @@ export default function PartnersPage() {
               </div>
 
               {/* Text */}
-              <h3 className="mt-4 text-sm font-semibold text-neutral-900">
+              <h3 className="mt-4 text-sm font-semibold text-[#012147]">
                 {partner.name}
               </h3>
               <p className="mt-1 text-sm text-neutral-600 leading-relaxed max-w-xs">

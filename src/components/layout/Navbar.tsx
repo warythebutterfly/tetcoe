@@ -37,8 +37,8 @@ export default function Navbar() {
                   className={[
                     "transition-colors",
                     active
-                      ? "text-neutral-900 font-semibold"
-                      : "text-neutral-600 hover:text-neutral-900",
+                      ? "text-[#012147] font-semibold"
+                      : "text-neutral-600 hover:text-[#012147]",
                   ].join(" ")}
                 >
                   {l.label}
@@ -50,7 +50,7 @@ export default function Navbar() {
           {/* Desktop CTA */}
           <Link
             href="/contact"
-            className="hidden lg:inline-flex items-center rounded-xl bg-neutral-900 px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800 transition"
+            className="hidden lg:inline-flex items-center rounded-xl bg-[#012147] px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800 transition"
           >
             Enquiries
           </Link>
@@ -63,17 +63,17 @@ export default function Navbar() {
           >
             {/* Hamburger → X animation */}
             <span
-              className={`absolute h-0.5 w-5 bg-neutral-900 transition-transform duration-300 ${
+              className={`absolute h-0.5 w-5 bg-[#012147] transition-transform duration-300 ${
                 open ? "rotate-45" : "-translate-y-1.5"
               }`}
             />
             <span
-              className={`absolute h-0.5 w-5 bg-neutral-900 transition-opacity duration-300 ${
+              className={`absolute h-0.5 w-5 bg-[#012147] transition-opacity duration-300 ${
                 open ? "opacity-0" : "opacity-100"
               }`}
             />
             <span
-              className={`absolute h-0.5 w-5 bg-neutral-900 transition-transform duration-300 ${
+              className={`absolute h-0.5 w-5 bg-[#012147] transition-transform duration-300 ${
                 open ? "-rotate-45" : "translate-y-1.5"
               }`}
             />
@@ -100,8 +100,8 @@ export default function Navbar() {
                     className={[
                       "transition-colors",
                       active
-                        ? "text-neutral-900 font-semibold"
-                        : "text-neutral-600 hover:text-neutral-900",
+                        ? "text-[#012147] font-semibold"
+                        : "text-neutral-600 hover:text-[#012147]",
                     ].join(" ")}
                   >
                     {l.label}
@@ -112,7 +112,7 @@ export default function Navbar() {
               <Link
                 href="/contact"
                 onClick={() => setOpen(false)}
-                className="mt-2 inline-flex w-fit items-center rounded-xl bg-neutral-900 px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800 transition"
+                className="mt-2 inline-flex w-fit items-center rounded-xl bg-[#012147] px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800 transition"
               >
                 Enquiries
               </Link>

@@ -16,7 +16,7 @@ export default function AboutPage() {
         <div className="mt-8 grid gap-4 lg:grid-cols-3">
           <Card className="p-6 lg:col-span-2">
             <p className="text-sm text-neutral-600 leading-relaxed">
-              <span className="font-semibold text-neutral-900">{site.fullName}</span>{" "}
+              <span className="font-semibold text-[#012147]">{site.fullName}</span>{" "}
               was established in {site.established} at {site.host}. The Centre strengthens
               institutional capacity for quality training and demand-driven research, and
               supports programmes that address priority development challenges.

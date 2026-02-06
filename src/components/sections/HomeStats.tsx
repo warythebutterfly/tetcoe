@@ -19,7 +19,7 @@ export default function HomeStats() {
               <p className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
                 {s.label}
               </p>
-              <p className="mt-2 text-lg font-semibold text-neutral-900">
+              <p className="mt-2 text-lg font-semibold text-[#012147]">
                 {s.value}
               </p>
             </Card>

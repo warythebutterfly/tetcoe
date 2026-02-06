@@ -14,7 +14,7 @@ export default function ProgrammesPage() {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-3">
           <Card className="p-6">
-            <h3 className="font-semibold text-neutral-900">Short Courses</h3>
+            <h3 className="font-semibold text-[#012147]">Short Courses</h3>
             <ul className="mt-3 space-y-2 text-sm text-neutral-600">
               <li>• Grant proposal & scientific writing</li>
               <li>• Information technology, robotics & drone technology</li>
@@ -27,7 +27,7 @@ export default function ProgrammesPage() {
           </Card>
 
           <Card className="p-6">
-            <h3 className="font-semibold text-neutral-900">
+            <h3 className="font-semibold text-[#012147]">
               National Skills Development
             </h3>
             <p className="mt-3 text-sm text-neutral-600 leading-relaxed">
@@ -40,7 +40,7 @@ export default function ProgrammesPage() {
           </Card>
 
           <Card className="p-6">
-            <h3 className="font-semibold text-neutral-900">
+            <h3 className="font-semibold text-[#012147]">
               Entrepreneurship & Incubation
             </h3>
             <p className="mt-3 text-sm text-neutral-600 leading-relaxed">

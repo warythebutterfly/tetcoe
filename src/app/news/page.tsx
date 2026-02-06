@@ -26,7 +26,7 @@ export default function NewsPage() {
                 {item.date}
               </p>
 
-              <h3 className="mt-2 text-lg font-semibold text-neutral-900">
+              <h3 className="mt-2 text-lg font-semibold text-[#012147]">
                 {item.title}
               </h3>
 
@@ -38,7 +38,7 @@ export default function NewsPage() {
                 {/* TODO: Enable dynamic routing for full article */}
                 <Link
                   href="#"
-                  className="text-sm font-semibold text-neutral-900 hover:underline"
+                  className="text-sm font-semibold text-[#012147] hover:underline"
                 >
                   Read more →
                 </Link>

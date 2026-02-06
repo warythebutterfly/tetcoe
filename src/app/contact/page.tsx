@@ -14,7 +14,7 @@ export default function ContactPage() {
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           <Card className="p-6">
-            <h3 className="font-semibold text-neutral-900">
+            <h3 className="font-semibold text-[#012147]">
               Contact Information
             </h3>
             <p className="mt-3 text-sm text-neutral-600">
@@ -36,7 +36,7 @@ export default function ContactPage() {
           </Card>
 
           <Card className="p-6">
-            <h3 className="font-semibold text-neutral-900">
+            <h3 className="font-semibold text-[#012147]">
               Enquiry Form
             </h3>
 
@@ -56,7 +56,7 @@ export default function ContactPage() {
               />
               <button
                 type="button"
-                className="rounded-xl bg-neutral-900 px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800 transition"
+                className="rounded-xl bg-[#012147] px-4 py-2 text-sm font-semibold text-white hover:bg-neutral-800 transition"
               >
                 Send Message
               </button>

@@ -20,7 +20,7 @@ export default function HomeActivities() {
             <Card key={a.title} className="p-6">
               {/* Header */}
               <div className="flex items-start justify-between gap-3">
-                <p className="text-base font-semibold text-neutral-900">
+                <p className="text-base font-semibold text-[#012147]">
                   {a.title}
                 </p>
                 <span className="text-xs font-semibold text-neutral-500 shrink-0">
@@ -49,7 +49,7 @@ export default function HomeActivities() {
         <div className="mt-10">
           <Link
             href="/activities"
-            className="inline-flex items-center text-sm font-semibold text-neutral-900 hover:underline"
+            className="inline-flex items-center text-sm font-semibold text-[#012147] hover:underline"
           >
             View all activities →
           </Link>

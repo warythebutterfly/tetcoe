@@ -45,7 +45,7 @@ export function BoardMemberCardOld({
       />
 
       <div>
-        <p className="font-semibold text-neutral-900">
+        <p className="font-semibold text-[#012147]">
           {member.name}
         </p>
         <p className="text-sm text-neutral-600">
@@ -85,7 +85,7 @@ export default function BoardMemberCard({
       />
 
       <div className="min-w-0">
-        <p className="font-semibold text-neutral-900 truncate">
+        <p className="font-semibold text-[#012147] truncate">
           {member.name}
         </p>
         <p className="text-sm text-neutral-600">
@@ -97,7 +97,7 @@ export default function BoardMemberCard({
           <>
             <button
               onClick={() => setOpen(!open)}
-              className="mt-2 text-sm font-medium text-neutral-900 underline underline-offset-4"
+              className="mt-2 text-sm font-medium text-[#012147] underline underline-offset-4"
             >
               {open ? "Hide bio" : "Read bio"}
             </button>

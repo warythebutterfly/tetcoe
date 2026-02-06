@@ -19,7 +19,7 @@ export default function ActivitiesPage() {
             <Card key={activity.title} className="p-6 sm:p-8">
               {/* Header */}
               <div className="flex flex-wrap items-center justify-between gap-2">
-                <h3 className="text-lg font-semibold text-neutral-900">
+                <h3 className="text-lg font-semibold text-[#012147]">
                   {activity.title}
                 </h3>
                 <span className="text-xs font-semibold text-neutral-500">
@@ -35,7 +35,7 @@ export default function ActivitiesPage() {
               {/* Highlights */}
               {activity.highlights && (
                 <div className="mt-4">
-                  <p className="text-sm font-semibold text-neutral-900">
+                  <p className="text-sm font-semibold text-[#012147]">
                     Highlights
                   </p>
                   <ul className="mt-2 space-y-1 text-sm text-neutral-600 list-disc pl-5">

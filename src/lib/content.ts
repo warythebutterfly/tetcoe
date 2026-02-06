@@ -81,6 +81,7 @@ export const activities = [
       "/img/activities/bluetti-4.png",
       "/img/activities/bluetti-5.png",
       "/img/activities/bluetti-6.png",
+      "/img/activities/bluetti-7.png",
     ],
     youtube: null //"https://www.youtube.com/embed/XXXXXXX", //TODO: replace if available
   },

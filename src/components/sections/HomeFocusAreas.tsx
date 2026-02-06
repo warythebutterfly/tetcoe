@@ -16,7 +16,7 @@ export default function HomeFocusAreas() {
         <div className="mt-8 grid gap-4 md:grid-cols-2">
           {focusAreas.map((f) => (
             <Card key={f.title} className="p-6">
-              <p className="text-base font-semibold text-neutral-900">{f.title}</p>
+              <p className="text-base font-semibold text-[#012147]">{f.title}</p>
               <p className="mt-2 text-sm text-neutral-600 leading-relaxed">{f.desc}</p>
             </Card>
           ))}

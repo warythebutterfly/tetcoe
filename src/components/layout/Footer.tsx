@@ -22,7 +22,7 @@ export default function Footer() {
               priority
             />
             <div>
-              <p className="text-sm font-semibold text-neutral-900">
+              <p className="text-sm font-semibold text-[#012147]">
                 {site.fullName}
               </p>
               <p className="text-sm text-neutral-600">{site.host}</p>
@@ -38,7 +38,7 @@ export default function Footer() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-neutral-600 transition hover:text-neutral-900 hover:underline underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
+                className="text-neutral-600 transition hover:text-[#012147] hover:underline underline-offset-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
               >
                 {link.label}
               </Link>
