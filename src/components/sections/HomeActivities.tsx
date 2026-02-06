@@ -2,6 +2,8 @@ import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { activities } from "@/lib/content";
+import Link from "next/link";
+import ActivityCarousel from "../ui/Carousel";
 
 export default function HomeActivities() {
   return (
@@ -13,39 +15,45 @@ export default function HomeActivities() {
           desc="A snapshot of collaborations, trainings, and initiatives delivered by the Centre."
         />
 
-        <div className="mt-8 grid gap-4 lg:grid-cols-2">
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {activities.slice(0, 4).map((a) => (
             <Card key={a.title} className="p-6">
-              <div className="flex items-center justify-between gap-3">
+              {/* Header */}
+              <div className="flex items-start justify-between gap-3">
                 <p className="text-base font-semibold text-neutral-900">
                   {a.title}
                 </p>
-                <span className="text-xs font-semibold text-neutral-500">
+                <span className="text-xs font-semibold text-neutral-500 shrink-0">
                   {a.year}
                 </span>
               </div>
-              <p className="mt-2 text-sm text-neutral-600 leading-relaxed">
+
+              {/* Description */}
+              <p className="mt-2 text-sm text-neutral-600 leading-relaxed max-w-prose">
                 {a.desc}
               </p>
 
-              {/* TODO: Add images carousel or YouTube embed per activity */}
-              <div className="mt-4 rounded-xl bg-neutral-100 p-4 text-sm text-neutral-500">
-                Add photos/video for this activity when available.
-              </div>
+              {/* Carousel */}
+              {a.images && a.images.length > 0 && (
+                <div className="mt-4">
+                  <ActivityCarousel
+                    images={a.images}
+                    title={a.title}
+                  />
+                </div>
+              )}
             </Card>
           ))}
         </div>
 
-        <div className="mt-8">
-          <a
+        <div className="mt-10">
+          <Link
             href="/activities"
             className="inline-flex items-center text-sm font-semibold text-neutral-900 hover:underline"
           >
             View all activities →
-          </a>
+          </Link>
         </div>
-
-        {/* TODO: Add "Latest News" preview (top 2 posts) */}
       </Container>
     </section>
   );
