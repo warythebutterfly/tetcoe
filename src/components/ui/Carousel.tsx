@@ -98,14 +98,14 @@ export default function ActivityCarousel({
           <>
             <button
               onClick={() => emblaApi?.scrollPrev()}
-              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 shadow hover:bg-white transition"
+              className="absolute left-2 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 shadow hover:bg-white transition text-[#012147]"
               aria-label="Previous image"
             >
               ‹
             </button>
             <button
               onClick={() => emblaApi?.scrollNext()}
-              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 shadow hover:bg-white transition"
+              className="absolute right-2 top-1/2 -translate-y-1/2 rounded-full bg-white/90 p-2 shadow hover:bg-white transition text-[#012147]"
               aria-label="Next image"
             >
               ›

@@ -40,7 +40,7 @@ export default function ContactPage() {
               Enquiry Form
             </h3>
 
-            <form className="mt-4 space-y-3">
+            <form className="mt-4 space-y-3 text-[#012147]">
               <input
                 className="w-full rounded-xl border border-neutral-300 px-4 py-2 text-sm"
                 placeholder="Full Name"
