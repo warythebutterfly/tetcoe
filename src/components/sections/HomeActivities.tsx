@@ -7,7 +7,7 @@ import ActivityCarousel from "../ui/Carousel";
 
 export default function HomeActivities() {
   return (
-    <section className="py-12 sm:py-16 bg-white border-y border-neutral-200">
+    <section className="py-12 sm:py-16 border-y border-neutral-200">
       <Container>
         <SectionHeading
           eyebrow="Journey so far"
