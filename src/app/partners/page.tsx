@@ -15,7 +15,7 @@ export default function PartnersPage() {
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 text-sm">
           <div className="rounded-xl border border-neutral-200 p-4">
-            <p className="font-semibold text-[#012147]">Industry Partners</p>
+            <p className="font-semibold text-[#012147] dark:text-white">Industry Partners</p>
             <p className="mt-1 text-neutral-600">
               Skills delivery, workplace exposure, and technical training
               support.
@@ -23,7 +23,7 @@ export default function PartnersPage() {
           </div>
 
           <div className="rounded-xl border border-neutral-200 p-4">
-            <p className="font-semibold text-[#012147]">
+            <p className="font-semibold text-[#012147] dark:text-white">
               Development Organisations
             </p>
             <p className="mt-1 text-neutral-600">
@@ -32,7 +32,7 @@ export default function PartnersPage() {
           </div>
 
           <div className="rounded-xl border border-neutral-200 p-4">
-            <p className="font-semibold text-[#012147]">
+            <p className="font-semibold text-[#012147] dark:text-white">
               Academic & Research Partners
             </p>
             <p className="mt-1 text-neutral-600">
@@ -41,7 +41,7 @@ export default function PartnersPage() {
           </div>
 
           <div className="rounded-xl border border-neutral-200 p-4">
-            <p className="font-semibold text-[#012147]">Technology Partners</p>
+            <p className="font-semibold text-[#012147] dark:text-white">Technology Partners</p>
             <p className="mt-1 text-neutral-600">
               Tools, platforms, and applied technical solutions.
             </p>
@@ -49,7 +49,7 @@ export default function PartnersPage() {
         </div>
 
         <div className="mt-20 max-w-3xl">
-          <h3 className="text-lg font-semibold text-[#012147]">
+          <h3 className="text-lg font-semibold text-[#012147] dark:text-white">
             How partnerships support the Centre
           </h3>
 
@@ -97,7 +97,7 @@ export default function PartnersPage() {
               </div>
 
               {/* Text */}
-              <h3 className="mt-4 text-sm font-semibold text-[#012147]">
+              <h3 className="mt-4 text-sm font-semibold text-[#012147] dark:text-white">
                 {partner.name}
               </h3>
               <p className="mt-1 text-sm text-neutral-600 leading-relaxed max-w-xs">
@@ -114,7 +114,7 @@ export default function PartnersPage() {
       Partnership Highlight
     </p>
 
-    <h3 className="mt-2 font-semibold text-[#012147]">
+    <h3 className="mt-2 font-semibold text-[#012147] dark:text-white">
       BLUETTI Campus Initiative
     </h3>
 
@@ -141,7 +141,7 @@ export default function PartnersPage() {
 
 
         <div className="mt-20 border-t border-neutral-200 pt-10 ">
-          <h3 className="text-lg font-semibold text-[#012147]">
+          <h3 className="text-lg font-semibold text-[#012147] dark:text-white">
             Partner with the Centre
           </h3>
 
