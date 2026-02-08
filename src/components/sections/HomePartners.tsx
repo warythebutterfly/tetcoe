@@ -5,7 +5,7 @@ import { partners } from "@/lib/content";
 
 export default function HomePartners() {
   return (
-    <section className="py-10 sm:py-12 border-t border-neutral-200 bg-white">
+    <section className="py-10 sm:py-12 border-t border-neutral-200">
       <Container>
         <SectionHeading
           eyebrow="Partnerships"
