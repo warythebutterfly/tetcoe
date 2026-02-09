@@ -137,28 +137,135 @@ export const partners = [
 
 export const news = [
   {
-    title:
-      "Empowering the Next Generation: TETCoE Support for Students, Staff and Researchers",
-    date: "30 May, 2025",
-    summary:
-      "TETCoE continues to strengthen capacity building through targeted support for students, academic staff, and researchers.",
     slug: "empowering-the-next-generation-2025",
-    // TODO: Add cover image
-    // TODO: Add full article content or PDF link
+    title:
+      "Empowering the Next Generation: TETCoE Support for Students and Staff",
+    date: "30 May 2025",
+    summary:
+      "TETCoE highlighted its support for students, staff, and researchers through grants, internships, and research incentives.",
+    cover: "/img/news/empowering-1.png",
+    content: `
+  The event showcased the Centre’s interventions in research publication support, staff and student internships, and capacity-building initiatives.
+  
+  Presentations were delivered by members of the Technical Advisory Committee and Centre management, reinforcing TETCoE’s role in strengthening academic excellence and applied research at Yaba College of Technology.
+      `,
+    gallery: [
+      "/img/news/empowering-1.png",
+      "/img/news/empowering-2.png",
+      "/img/news/empowering-3.png",
+      "/img/news/empowering-4.png",
+      "/img/news/empowering-5.png",
+      "/img/news/empowering-6.png",
+    ],
   },
+  // {
+  //   title:
+  //     "Empowering the Next Generation: TETCoE Support for Students, Staff and Researchers",
+  //   date: "30 May, 2025",
+  //   summary:
+  //     "TETCoE continues to strengthen capacity building through targeted support for students, academic staff, and researchers.",
+  //   slug: "empowering-the-next-generation-2025",
+  //   cover: "/img/news/empowering-the-next-generation-2025-1.png",
+  //   gallery: [
+  //     "/img/news/empowering-the-next-generation-2025-1.png",
+  //     "/img/news/empowering-the-next-generation-2025-2.png",
+  //     "/img/news/empowering-the-next-generation-2025-3.png",
+  //     "/img/news/empowering-the-next-generation-2025-4.png",
+  //     "/img/news/empowering-the-next-generation-2025-5.png",
+  //   ],
+  // },
   {
     title: "Furniture Installation Training Programme Successfully Concludes",
     date: "19 July, 2025",
     summary:
       "The Furniture Installation Training programme funded by TETFund and executed by Jaebee Furniture Training Academy concluded successfully.",
     slug: "furniture-installation-training-2025",
+    cover: "/img/news/furniture-1.png",
+    gallery: [
+      "/img/news/furniture-4.png",
+      "/img/news/furniture-2.png",
+      "/img/news/furniture-3.png",
+    ],
   },
   {
-    title: "BLUETTI Campus Initiative Lights Up YabaTech",
-    date: "20 May, 2023",
+    slug: "approved-skills-programmes-q3-2025",
+    title: "TETCoE Receives Approval for Skills Programmes – Q3 2025",
+    date: "July 2025",
     summary:
-      "The BLUETTI Campus Initiative (LAAF) empowered students with hands-on exposure to solar energy technology.",
-    slug: "bluettti-campus-initiative-2023",
+      "The TETFund Centre of Excellence in Skills, Entrepreneurship and Sustainable Development (TETCoE) received approval to implement multiple skills development programmes for the third quarter of 2025.",
+    cover: "/img/news/q3-2025-approval-1.png",
+    content: `
+  The TETFund Centre of Excellence in Skills, Entrepreneurship and Sustainable Development (TETCoE) has received formal approval to implement a series of skills development programmes for the third quarter of 2025, covering the period July to September.
+  
+  The approved programmes align with the Centre’s mandate to deliver demand-driven, industry-relevant skills training in line with national development priorities. The initiatives span technical skills, vocational training, and applied capacity development, targeting students, youths, and other beneficiaries.
+  
+  These approvals reflect TETCoE’s commitment to structured planning, transparency, and results-based delivery, ensuring that training interventions are aligned with labour market needs and institutional objectives.
+    `,
+    gallery: [
+      "/img/news/q3-2025-approval-2.jpg",
+      "/img/news/q3-2025-approval-3.jpg",
+      "/img/news/q3-2025-approval-4.jpg",
+      "/img/news/q3-2025-approval-5.jpg",
+      "/img/news/q3-2025-approval-6.jpg",
+    ],
+  },
+  // {
+  //   title: "BLUETTI Campus Initiative Lights Up YabaTech",
+  //   date: "20 May, 2023",
+  //   summary:
+  //     "The BLUETTI Campus Initiative (LAAF) empowered students with hands-on exposure to solar energy technology.",
+  //   slug: "bluettti-campus-initiative-2023",
+  //   cover: "/img/news/bluettti-campus-initiative-2023-1.png",
+  //   gallery: [
+  //     "/img/news/bluettti-campus-initiative-2023-1.png",
+  //     "/img/news/bluettti-campus-initiative-2023-2.png",
+  //     "/img/news/bluettti-campus-initiative-2023-3.png",
+  //     "/img/news/bluettti-campus-initiative-2023-4.png",
+  //   ],
+  // },
+  {
+    slug: "bluetti-campus-initiative-2023",
+    title: "BLUETTI Campus Initiative: Lighting an African Family",
+    date: "20 May 2023",
+    summary:
+      "TETCoE, in collaboration with BLUETTI, delivered a hands-on solar energy training programme for students across multiple disciplines.",
+    cover: "/img/news/bluetti-1.png",
+    content: `
+  The BLUETTI Campus Initiative, tagged *Lighting an African Family (LAAF)*, was co-hosted by the TETFund Centre of Excellence in Skills, Entrepreneurship and Sustainable Development (TETCoE) and BLUETTI Energy on 20 May 2023 at Yaba College of Technology.
+  
+  The programme introduced students to modern solar energy technologies, including installation, repair, and maintenance of solar panels. Over 170 students from different schools and departments participated, alongside staff and representatives of the College management.
+  
+  As part of the initiative, BLUETTI donated solar energy products to selected students and demonstrated real-world applications of renewable energy solutions, strengthening skills transfer and industry exposure.
+      `,
+    gallery: [
+      "/img/news/bluetti-2.png",
+      "/img/news/bluetti-3.png",
+      "/img/news/bluetti-4.png",
+      "/img/news/bluetti-5.png",
+      "/img/news/bluetti-6.png",
+      "/img/news/bluetti-7.png",
+    ],
+    // youtube: "https://www.youtube.com/embed/VIDEO_ID",
+  },
+
+  {
+    slug: "tony-elumelu-foundation-masterclass-2022",
+    title: "Tony Elumelu Foundation Grant Writing Masterclass",
+    date: "2022",
+    summary:
+      "A grant writing and proposal development masterclass supported by the Tony Elumelu Foundation.",
+    cover: "/img/news/tef-2.png",
+    content: `
+  The Tony Elumelu Foundation Grant Writing Masterclass focused on equipping participants with practical knowledge on writing winning grant proposals and executing funded projects responsibly.
+  
+  Participants were trained on identifying funding opportunities, developing competitive proposals, and managing grants in line with donor expectations. The session formed part of the Centre’s commitment to entrepreneurship development and capacity building.
+      `,
+    gallery: [
+      "/img/news/tef-2.png",
+      "/img/news/tef-3.png",
+      "/img/news/tef-4.png",
+      "/img/news/tef-5.png",
+    ],
   },
 ];
 

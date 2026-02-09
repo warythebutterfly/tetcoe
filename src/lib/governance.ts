@@ -7,10 +7,14 @@ export type BoardMember = {
 
 export const governance = {
   director: {
-    name: "Arc. Sheriffdeen Ayodele-Oja",
-    title: "Centre Director",
-    photo: "/img/members/director.jpg",
-    bio: "Centre Director, TETFund Centre of Excellence in Skills, Entrepreneurship & Sustainable Development",
+    name: "Arc. Sheriff-deen Olashina Ayodele-Oja",
+    title: "Centre Director, MNIA, Registered Architect (ARCON), FICA FLPi",
+    photo: "/img/members/Sheriff.png",
+    bio: `Arc. Sheriffdeen Ayodele-Oja is a senior academic and chartered architect with over two decades of experience in teaching, research, professional practice, and academic administration at Yaba College of Technology.
+
+/n He joined the College as a Lecturer II in 1997 and rose to the rank of Chief Lecturer in 2014. He has been actively involved in teaching, research, and institutional development, serving on several academic and administrative committees and contributing to skills development, professional mentorship, and capacity building within the College and beyond.
+
+/n His professional practice spans residential, commercial, and institutional projects, and he remains committed to quality training, sustainable development, and industry-relevant education.`,
   },
 
   managers: [
@@ -61,9 +65,16 @@ export const governance = {
 
   tacMembers: [
     {
+        name: "Dr. Lauretta Nwanneka Ofodile",
+        title:
+          "TETCoE TAC Member, Director, College Central Research Laboratory (2018-2022), Head, Department of Biological Sciences (2009-2012)",
+        photo: "/img/members/Lauretta.png",
+        bio: "Dr. Lauretta Ofodile is a botanist and mycologist with extensive research experience in waste management, biotechnology, and sustainable innovation. She has led multiple funded research projects, holds patents, and provides expert technical guidance on applied research and skills development.",
+      },
+    {
       name: "Dr. Lauretta Nwanneka Ofodile",
       title:
-        "TETCoE TAC Member, Director, College Central Research Laboratory (2018-2022), Head, Department of Biological Sciences (2009-2012), Team Lead of YCT Plastogas Hub",
+        "TETCoE TAC Member, Director, College Central Research Laboratory (2018-2022), Head, Department of Biological Sciences (2009-2012)",
       photo: "/img/members/Lauretta.png",
       bio: "Dr. Lauretta Ofodile is a botanist and mycologist with extensive research experience in waste management, biotechnology, and sustainable innovation. She has led multiple funded research projects, holds patents, and provides expert technical guidance on applied research and skills development.",
     },

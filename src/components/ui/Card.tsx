@@ -25,8 +25,6 @@ export function Card({
   );
 }
 
-
-
 export function BoardMemberCardOld({
   member,
   compact = false,
@@ -45,12 +43,8 @@ export function BoardMemberCardOld({
       />
 
       <div>
-        <p className="font-semibold text-[#012147]">
-          {member.name}
-        </p>
-        <p className="text-sm text-neutral-600">
-          {member.title}
-        </p>
+        <p className="font-semibold text-[#012147]">{member.name}</p>
+        <p className="text-sm text-neutral-600">{member.title}</p>
 
         {!compact && member.bio && (
           <p className="mt-2 text-sm text-neutral-600 leading-relaxed max-w-xl">
@@ -71,8 +65,7 @@ export default function BoardMemberCard({
 }) {
   const [open, setOpen] = useState(false);
 
-  const size =
-    variant === "lead" ? 96 : variant === "grid" ? 56 : 64;
+  const size = variant === "lead" ? 96 : variant === "grid" ? 56 : 64;
 
   return (
     <div className="flex items-start gap-4">
@@ -85,12 +78,8 @@ export default function BoardMemberCard({
       />
 
       <div className="min-w-0">
-        <p className="font-semibold text-[#012147] truncate">
-          {member.name}
-        </p>
-        <p className="text-sm text-neutral-600">
-          {member.title}
-        </p>
+        <p className="font-semibold text-[#012147] truncate">{member.name}</p>
+        <p className="text-sm text-neutral-600">{member.title}</p>
 
         {/* Bio only on demand */}
         {member.bio && variant !== "grid" && (
@@ -102,11 +91,14 @@ export default function BoardMemberCard({
               {open ? "Hide bio" : "Read bio"}
             </button>
 
-            {open && (
-              <p className="mt-3 text-sm text-neutral-600 leading-relaxed max-w-xl">
-                {member.bio}
-              </p>
-            )}
+            {open &&
+              member.bio
+                .split("/n")
+                .map((paragraph) => (
+                  <p className="mt-3 text-sm text-neutral-600 leading-relaxed max-w-xl">
+                    {paragraph}
+                  </p>
+                ))}
           </>
         )}
       </div>

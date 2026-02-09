@@ -45,7 +45,6 @@ export default function GovernancePage() {
 
         {/* Management & Admin */}
         <div className="mt-16 border-t border-neutral-200 pt-10">
-
           <h3 className="text-lg font-semibold text-[#012147]">
             Centre Management & Administration
           </h3>
@@ -79,7 +78,6 @@ export default function GovernancePage() {
 
         {/* TAC Members */}
         <div className="mt-16 border-t border-neutral-200 pt-10">
-
           <h3 className="text-lg font-semibold text-[#012147] dark:text-white">
             Technical Advisory Committee (TAC)
           </h3>
@@ -91,7 +89,7 @@ export default function GovernancePage() {
 
           <div className="mt-6 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {governance.tacMembers.map((m) => (
-              <Card key={m.name} className="p-5 overflow-hidden">
+              <Card key={m.name} className="p-5 max-w-[380px]">
                 <BoardMemberCard member={m} />
               </Card>
             ))}

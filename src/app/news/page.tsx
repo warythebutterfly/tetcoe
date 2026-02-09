@@ -3,6 +3,7 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
 import { news } from "@/lib/content";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function NewsPage() {
   return (
@@ -18,8 +19,15 @@ export default function NewsPage() {
           {news.map((item) => (
             <Card key={item.slug} className="p-6 flex flex-col">
               {/* TODO: Replace with cover image */}
-              <div className="mb-4 aspect-[16/9] rounded-xl bg-neutral-100 grid place-items-center text-sm text-neutral-500">
-                News cover image
+              <div className="mb-4 relative aspect-[16/9] overflow-hidden rounded-xl">
+
+              <Image
+                src={item.cover}
+                alt={item.title}
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
               </div>
 
               <p className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
@@ -37,7 +45,7 @@ export default function NewsPage() {
               <div className="mt-4">
                 {/* TODO: Enable dynamic routing for full article */}
                 <Link
-                  href="#"
+                  href={`/news/${item.slug}`}
                   className="text-sm font-semibold text-[#012147] hover:underline"
                 >
                   Read more →
