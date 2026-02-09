@@ -57,7 +57,7 @@ export default async function NewsDetailPage({
         )}
 
         {/* YouTube */}
-        {article.youtube && (
+        {/* {article.youtube && (
           <div className="mt-12 aspect-video">
             <iframe
               src={article.youtube}
@@ -65,7 +65,7 @@ export default async function NewsDetailPage({
               allowFullScreen
             />
           </div>
-        )}
+        )} */}
       </Container>
     </section>
   );
