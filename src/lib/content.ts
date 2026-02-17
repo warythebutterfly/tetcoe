@@ -16,7 +16,7 @@ export const site = {
 /n Through collaborations with industry partners, development organisations, and academic institutions, TETCoE continues to create opportunities for students, staff, and researchers to acquire relevant competencies, access funding opportunities, and translate knowledge into impactful solutions. We remain committed to transparency, accountability, and results-based delivery in line with TETFund’s objectives and performance framework.
 
 /n As we continue this journey, the Centre will deepen its focus on quality, relevance, and sustainability, ensuring that our programmes contribute meaningfully to national development, institutional strengthening, and the advancement of technical and vocational education in Nigeria.`,
-  directorName: "Arc. Sheriffdeen Ayodele-Oja",
+  directorName: "Arc. Sheriff-deen Ayodele-Oja",
   directorTitle: "directorTitle",
 };
 
