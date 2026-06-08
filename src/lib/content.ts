@@ -143,17 +143,17 @@ export const news = [
     date: "30 May 2025",
     summary:
       "TETCoE highlighted its support for students, staff, and researchers through grants, internships, and research incentives.",
-    cover: "/img/news/empowering-1.png",
+    cover: "/img/news/empowering-4.png",
     content: `
   The event showcased the Centre’s interventions in research publication support, staff and student internships, and capacity-building initiatives.
   
   Presentations were delivered by members of the Technical Advisory Committee and Centre management, reinforcing TETCoE’s role in strengthening academic excellence and applied research at Yaba College of Technology.
       `,
     gallery: [
+      "/img/news/empowering-4.png",
       "/img/news/empowering-1.png",
       "/img/news/empowering-2.png",
       "/img/news/empowering-3.png",
-      "/img/news/empowering-4.png",
       "/img/news/empowering-5.png",
       "/img/news/empowering-6.png",
     ],
