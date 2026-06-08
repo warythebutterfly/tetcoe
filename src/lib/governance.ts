@@ -65,13 +65,6 @@ export const governance = {
 
   tacMembers: [
     {
-        name: "Dr. Lauretta Nwanneka Ofodile",
-        title:
-          "TETCoE TAC Member, Director, College Central Research Laboratory (2018-2022), Head, Department of Biological Sciences (2009-2012)",
-        photo: "/img/members/Lauretta.png",
-        bio: "Dr. Lauretta Ofodile is a botanist and mycologist with extensive research experience in waste management, biotechnology, and sustainable innovation. She has led multiple funded research projects, holds patents, and provides expert technical guidance on applied research and skills development.",
-      },
-    {
       name: "Dr. Lauretta Nwanneka Ofodile",
       title:
         "TETCoE TAC Member, Director, College Central Research Laboratory (2018-2022), Head, Department of Biological Sciences (2009-2012)",
