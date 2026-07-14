@@ -1,11 +1,13 @@
 import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
-import { news } from "@/lib/content";
+import { getNews } from "@/lib/sanity-content";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function NewsPage() {
+export default async function NewsPage() {
+  const news = await getNews();
+
   return (
     <section className="py-12 sm:py-16">
       <Container>
@@ -18,16 +20,14 @@ export default function NewsPage() {
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
           {news.map((item) => (
             <Card key={item.slug} className="p-6 flex flex-col">
-              {/* TODO: Replace with cover image */}
               <div className="mb-4 relative aspect-[16/9] overflow-hidden rounded-xl">
-
-              <Image
-                src={item.cover}
-                alt={item.title}
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
+                <Image
+                  src={item.cover}
+                  alt={item.title}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                />
               </div>
 
               <p className="text-xs font-semibold tracking-widest text-neutral-500 uppercase">
@@ -43,7 +43,6 @@ export default function NewsPage() {
               </p>
 
               <div className="mt-4">
-                {/* TODO: Enable dynamic routing for full article */}
                 <Link
                   href={`/news/${item.slug}`}
                   className="text-sm font-semibold text-[#012147] hover:underline"

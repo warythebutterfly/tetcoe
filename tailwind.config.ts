@@ -1,7 +1,8 @@
-const animate = require("tailwindcss-animate");
-
 import type { Config } from "tailwindcss";
 import theme from "tailwindcss/defaultTheme";
+import containerQueries from "@tailwindcss/container-queries";
+import typography from "@tailwindcss/typography";
+import animate from "tailwindcss-animate";
 
 const config: Config = {
   darkMode: "selector",
@@ -81,10 +82,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require("@tailwindcss/container-queries"),
-    require("@tailwindcss/typography"),
-    animate,
-  ],
+  plugins: [containerQueries, typography, animate],
 };
 export default config;

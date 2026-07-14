@@ -1,7 +1,7 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Container from "@/components/layout/Container";
-import { news } from "@/lib/content";
+import { getNewsArticle } from "@/lib/sanity-content";
 
 export default async function NewsDetailPage({
   params,
@@ -10,11 +10,9 @@ export default async function NewsDetailPage({
 }) {
   const { slug } = await params;
 
-  const article = news.find((n) => n.slug === slug);
+  const article = await getNewsArticle(slug);
 
   if (!article) return notFound();
-
-  console.log("article", slug, article);
 
   return (
     <section className="py-12 sm:py-16">

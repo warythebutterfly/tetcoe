@@ -1,9 +1,11 @@
 import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
-import { partners } from "@/lib/content";
+import { getPartners } from "@/lib/sanity-content";
 import Image from "next/image";
 
-export default function PartnersPage() {
+export default async function PartnersPage() {
+  const partners = await getPartners();
+
   return (
     <section className="py-12 sm:py-16">
       <Container>

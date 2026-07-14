@@ -45,8 +45,11 @@ export default function AboutPage() {
 
                 {/* Message */}
                 <div>
-                  {site.directorMessage.split("/n").map((paragraph) => (
-                    <p className="text-sm text-neutral-700 leading-relaxed text-justify mb-4">
+                  {site.directorMessage.split("/n").map((paragraph, idx) => (
+                    <p
+                      key={idx}
+                      className="text-sm text-neutral-700 leading-relaxed text-justify mb-4"
+                    >
                       {paragraph}
                     </p>
                   ))}

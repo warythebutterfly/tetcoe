@@ -94,8 +94,11 @@ export default function BoardMemberCard({
             {open &&
               member.bio
                 .split("/n")
-                .map((paragraph) => (
-                  <p className="mt-3 text-sm text-neutral-600 leading-relaxed max-w-xl">
+                .map((paragraph, idx) => (
+                  <p
+                    key={idx}
+                    className="mt-3 text-sm text-neutral-600 leading-relaxed max-w-xl"
+                  >
                     {paragraph}
                   </p>
                 ))}
