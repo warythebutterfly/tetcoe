@@ -1,9 +1,11 @@
 import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import BoardMemberCard, { Card } from "@/components/ui/Card";
-import { governance } from "@/lib/governance";
+import { getGovernance } from "@/lib/sanity-content";
 
-export default function GovernancePage() {
+export default async function GovernancePage() {
+  const governance = await getGovernance();
+
   return (
     <section className="py-12 sm:py-16">
       <Container>

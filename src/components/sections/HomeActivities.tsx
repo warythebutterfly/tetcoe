@@ -1,11 +1,13 @@
 import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
-import { activities } from "@/lib/content";
+import { getActivities } from "@/lib/sanity-content";
 import Link from "next/link";
 import ActivityCarousel from "../ui/Carousel";
 
-export default function HomeActivities() {
+export default async function HomeActivities() {
+  const activities = await getActivities();
+
   return (
     <section className="py-12 sm:py-16 border-y border-neutral-200">
       <Container>

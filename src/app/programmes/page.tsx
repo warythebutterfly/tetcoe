@@ -1,9 +1,11 @@
 import Container from "@/components/layout/Container";
 import SectionHeading from "@/components/ui/SectionHeading";
 import { Card } from "@/components/ui/Card";
-import { courses } from "@/lib/content";
+import { getCourses } from "@/lib/sanity-content";
 
-export default function ProgrammesPage() {
+export default async function ProgrammesPage() {
+  const courses = await getCourses();
+
   return (
     <section className="py-12 sm:py-16">
       <Container>

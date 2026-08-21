@@ -1,5 +1,23 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Sanity CMS
+
+The site is integrated with Sanity for editable programmes, activities, news, governance members, and partners.
+
+1. Create or open the Sanity project that will be managed by `contact.tetcoe@gmail.com`.
+2. Invite `contact.tetcoe@gmail.com` to the Sanity project as an administrator or editor.
+3. Copy `.env.example` to `.env.local` and set:
+
+```bash
+NEXT_PUBLIC_SANITY_PROJECT_ID=your_project_id
+NEXT_PUBLIC_SANITY_DATASET=production
+NEXT_PUBLIC_SANITY_API_VERSION=2026-06-18
+```
+
+4. Run the site and open the embedded Studio at `/studio`.
+
+If Sanity is not configured yet, the public pages fall back to the existing local content.
+
 ## Getting Started
 
 First, run the development server:
