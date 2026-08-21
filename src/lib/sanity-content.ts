@@ -1,5 +1,5 @@
 import { getSanityClient } from "@/sanity/client";
-import { activities, courses, news, partners } from "@/lib/content";
+import { activities, courses, news, partners, site } from "@/lib/content";
 import { governance, type BoardMember } from "@/lib/governance";
 
 type Course = (typeof courses)[number];
@@ -11,6 +11,13 @@ type GovernanceContent = {
   managers: BoardMember[];
   adminOfficers: BoardMember[];
   tacMembers: BoardMember[];
+};
+type AboutContent = typeof site & {
+  eyebrow: string;
+  title: string;
+  description: string;
+  overview: string;
+  directorPhoto: string;
 };
 
 async function fetchSanity<T>(query: string, params?: Record<string, unknown>) {
@@ -29,13 +36,58 @@ function withFallback<T>(items: T[] | null | undefined, fallback: T[]) {
   return items && items.length > 0 ? items : fallback;
 }
 
+const aboutFallback: AboutContent = {
+  ...site,
+  eyebrow: "About",
+  title: "Overview of the Centre",
+  description:
+    "TETCoE supports skills development, entrepreneurship, and applied research aligned to national priorities and industry needs.",
+  overview: `${site.fullName} was established in ${site.established} at ${site.host}. The Centre strengthens institutional capacity for quality training and demand-driven research, and supports programmes that address priority development challenges.`,
+  directorPhoto: "/img/members/director.jpg",
+};
+
+export async function getAbout(): Promise<AboutContent> {
+  const data = await fetchSanity<Partial<AboutContent>>(
+    `*[_type == "aboutPage"][0] {
+      eyebrow,
+      title,
+      description,
+      fullName,
+      established,
+      host,
+      overview,
+      directorMessage,
+      directorName,
+      directorTitle,
+      "directorPhoto": directorPhoto.asset->url,
+      vision,
+      mission
+    }`,
+  );
+
+  const about = {
+    ...aboutFallback,
+    ...Object.fromEntries(
+      Object.entries(data || {}).filter(
+        ([, value]) => value !== null && value !== "",
+      ),
+    ),
+  } as AboutContent;
+
+  if (!data?.overview && (data?.fullName || data?.established || data?.host)) {
+    about.overview = `${about.fullName} was established in ${about.established} at ${about.host}. The Centre strengthens institutional capacity for quality training and demand-driven research, and supports programmes that address priority development challenges.`;
+  }
+
+  return about;
+}
+
 export async function getCourses(): Promise<Course[]> {
   const data = await fetchSanity<Course[]>(
     `*[_type == "course"] | order(order asc, title asc) {
       title,
       category,
       summary
-    }`
+    }`,
   );
 
   return withFallback(data, courses);
@@ -50,7 +102,7 @@ export async function getActivities(): Promise<Activity[]> {
       highlights,
       "images": images[].asset->url,
       youtube
-    }`
+    }`,
   );
 
   return withFallback(data, activities);
@@ -62,7 +114,7 @@ export async function getPartners(): Promise<Partner[]> {
       name,
       note,
       "photo": photo.asset->url
-    }`
+    }`,
   );
 
   return withFallback(data, partners);
@@ -78,13 +130,15 @@ export async function getNews(): Promise<NewsArticle[]> {
       "cover": cover.asset->url,
       content,
       "gallery": gallery[].asset->url
-    }`
+    }`,
   );
 
   return withFallback(data, news);
 }
 
-export async function getNewsArticle(slug: string): Promise<NewsArticle | null> {
+export async function getNewsArticle(
+  slug: string,
+): Promise<NewsArticle | null> {
   const article = await fetchSanity<NewsArticle | null>(
     `*[_type == "newsArticle" && slug.current == $slug][0] {
       title,
@@ -95,7 +149,7 @@ export async function getNewsArticle(slug: string): Promise<NewsArticle | null> 
       content,
       "gallery": gallery[].asset->url
     }`,
-    { slug }
+    { slug },
   );
 
   if (article) return article;
@@ -114,7 +168,7 @@ export async function getGovernance(): Promise<GovernanceContent> {
       roleGroup,
       "photo": photo.asset->url,
       bio
-    }`
+    }`,
   );
 
   if (!members || members.length === 0) return governance;
@@ -122,9 +176,11 @@ export async function getGovernance(): Promise<GovernanceContent> {
   const director = members.find((member) => member.roleGroup === "director");
   const managers = members.filter((member) => member.roleGroup === "manager");
   const adminOfficers = members.filter(
-    (member) => member.roleGroup === "adminOfficer"
+    (member) => member.roleGroup === "adminOfficer",
   );
-  const tacMembers = members.filter((member) => member.roleGroup === "tacMember");
+  const tacMembers = members.filter(
+    (member) => member.roleGroup === "tacMember",
+  );
 
   return {
     director: director || governance.director,
