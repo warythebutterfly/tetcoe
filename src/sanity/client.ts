@@ -11,7 +11,7 @@ export function getSanityClient() {
       projectId,
       dataset,
       apiVersion,
-      useCdn: true,
+      useCdn: false,
     });
   }
 

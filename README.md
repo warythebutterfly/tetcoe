@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Project Description
+
+TETCoE is the website for the TETFund Centre of Excellence in Skills,
+Entrepreneurship & Sustainable Development at Yaba College of Technology. It
+showcases the Centre's programmes, activities, focus areas, partnerships,
+governance, and latest news. Content editors can manage published content
+through the embedded Sanity Studio at `/studio`.
+
 ## Sanity CMS
 
 The site is integrated with Sanity for editable programmes, activities, news, governance members, and partners.

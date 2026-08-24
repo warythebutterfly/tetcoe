@@ -1,4 +1,4 @@
-import { sanityFetch } from "@/sanity/live";
+import { getSanityClient } from "@/sanity/client";
 import { activities, courses, news, partners, site } from "@/lib/content";
 import { governance, type BoardMember } from "@/lib/governance";
 
@@ -21,11 +21,11 @@ type AboutContent = typeof site & {
 };
 
 async function fetchSanity<T>(query: string, params?: Record<string, unknown>) {
-  if (!process.env.NEXT_PUBLIC_SANITY_PROJECT_ID) return null;
+  const client = getSanityClient();
+  if (!client) return null;
 
   try {
-    const { data } = await sanityFetch({ query, params: params || {} });
-    return data as T;
+    return await client.fetch<T>(query, params || {}, { cache: "no-store" });
   } catch (error) {
     console.warn("Sanity fetch failed, using local fallback content.", error);
     return null;

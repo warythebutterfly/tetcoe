@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { navLinks } from "@/lib/nav";
 import logo from "../../assets/img/logo.png";
-import CurrentYear from "./CurrentYear";
 
 export default function Footer() {
   return (
@@ -49,7 +48,7 @@ export default function Footer() {
           {/* Legal */}
           <div className="text-sm text-neutral-500 lg:text-right">
             <p>
-              © <CurrentYear /> {site.fullName}
+              © {new Date().getFullYear()} {site.fullName}
             </p>
             <p>All rights reserved.</p>
           </div>
